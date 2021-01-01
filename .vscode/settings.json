@@ -1,0 +1,5 @@
+{
+  "eslint.validate": ["svelte"],
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true
+}
