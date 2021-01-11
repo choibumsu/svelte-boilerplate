@@ -60,11 +60,6 @@ export default {
       }),
     }),
 
-    babel({
-      babelHelpers: 'bundled',
-      presets: ['@babel/preset-env'],
-    }),
-
     // we'll extract any component CSS out into
     // a separate file - better for performance
     css({
@@ -86,6 +81,10 @@ export default {
       extensions: ['.svelte', '.ts', '.js', '.json'],
     }),
     commonjs(),
+    babel({
+      babelHelpers: 'bundled',
+      presets: ['@babel/preset-env'],
+    }),
 
     alias({
       entries: [
